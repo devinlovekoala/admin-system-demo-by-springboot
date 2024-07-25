@@ -19,33 +19,20 @@
 </p>
 
 <h3 align="center">"优雅的SpringBoot后台管理系统样例"</h3>
-  <p align="center">
-    一个"完美的"管理系统模板，去快速开始开发属于你的项目！
-    <br />
-    <a href="https://github.com/shaojintian/Best_README_template"><strong>探索本项目的文档 »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/shaojintian/Best_README_template">查看Demo</a>
-    ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">报告Bug</a>
-    ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">提出新特性</a>
-  </p>
 
 ## 目录
 
 - [上手指南](#上手指南)
     - [开发前的配置要求](#开发前的配置要求)
-    - [安装步骤](#安装步骤)
+    - [运行demo步骤](#运行demo步骤)
 - [文件目录说明](#文件目录说明)
 - [开发的架构](#开发的架构)
 - [部署](#部署)
 - [使用到的框架](#使用到的框架)
-- [贡献者](#贡献者)
-    - [如何参与开源项目](#如何参与开源项目)
 - [版本控制](#版本控制)
 - [作者](#作者)
-- [鸣谢](#鸣谢)
+- [版权说明](#版权说明)
+- [特别鸣谢](#特别鸣谢)
 
 ### 上手指南
 
@@ -57,13 +44,18 @@
 2. 推荐使用IDEA智能IDE，参考安装路径：[https://www.jetbrains.com/idea/download/](https://www.jetbrains.com/idea/download/)
 3. Maven3.6.3版本及以上，参考安装路径：[https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
 
-###### **安装步骤**
+###### **运行demo步骤**
 
-Clone the repo
+从远程github仓库克隆项目到本地:
 
 ```sh
 git clone https://github.com/devinlovekoala/admin-system-demo-by-springboot.git
 ```
+
+使用IDEA打开项目，等待maven依赖下载完成，运行项目，访问[http://localhost:8080](http://localhost:8080)即可看到项目首页
+
+```sh
+
 
 ### 文件目录说明
 #### (可以参考学习MVC模式的文件目录结构)
@@ -79,16 +71,28 @@ src
     │           └── admin
     │               └── controller
     │                   └── IndexController.java
+    │                   └── LoginController.java
+    │                   └── EmployeeController.java
+    │                   └── LoginHandlerInterceptor.java
+    │               └── dao
+    │                   └── DepartmentDao.java
+    │                   └── EmployeeDao.java
+    │               └── pojo
+    │                   └── Department.java
+    │                   └── Employee.java
     └── resources
         ├── application.properties
         └── templates
             └── index.html
+            └── dashboard.html
+            └── emp
+                └── list.html
+                └── add.html
+                └── update.html
+            └── error
+                └── 404.html
 
 ```
-
-
-
-
 
 ### 开发的架构
 
@@ -118,7 +122,7 @@ Java SpringBoot开源架构
 
 BUPT Devin
 
-知乎:xxxx  &ensp; qq:xxxxxx
+邮箱：buptdevin@gmail.com
 
 *欢迎联系我提出建议意见，共同维护admin后台管理框架*
 
