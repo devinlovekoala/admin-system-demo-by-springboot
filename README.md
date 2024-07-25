@@ -52,10 +52,9 @@
 git clone https://github.com/devinlovekoala/admin-system-demo-by-springboot.git
 ```
 
-使用IDEA打开项目，等待maven依赖下载完成，运行项目，访问[http://localhost:8080](http://localhost:8080)即可看到项目首页
+使用IDEA打开项目，等待maven依赖下载完成
 
-```sh
-
+运行项目，访问[http://localhost:8080/admin](http://localhost:8080/admin)即可看到项目首页
 
 ### 文件目录说明
 #### (可以参考学习MVC模式的文件目录结构)
