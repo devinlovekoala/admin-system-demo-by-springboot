@@ -1,10 +1,10 @@
 package com.example.admin.dao;
-
 import com.example.admin.pojo.Department;
 import com.example.admin.pojo.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,8 +35,8 @@ public class EmployeeDao {
         employees.put(employee.getId(), employee);
     }
     //查询全部员工信息
-    public Map<Integer, Employee> getAll() {
-        return employees;
+    public Collection<Employee> getAll() {
+        return employees.values();
     }
     //通过id查询员工
     public Employee getEmployeeById(Integer id) {

@@ -15,8 +15,6 @@
 <p align="center">
 	<img src="https://img.shields.io/badge/JDK-1.8+-orange">
 	<img src="https://img.shields.io/badge/SpringBoot-3.3.2.RELEASE-brightgreen">
-	<img src="https://img.shields.io/badge/MyBatis-3.5.5-purple">
-	<img src="https://img.shields.io/badge/Vue-3.4.29-yellow">
 	<img src="https://img.shields.io/badge/license-MIT-blue"> 
 </p>
 
@@ -51,44 +49,40 @@
 
 ### 上手指南
 
-请将所有链接中的“shaojintian/Best_README_template”改为“your_github_name/your_repository”
-
 
 
 ###### 开发前的配置要求
 
-1. xxxxx x.x.x
-2. xxxxx x.x.x
+1. JDK1.8版本及以上，最好为JDK17，参考安装路径：[https://www.oracle.com/java/technologies/javase-jdk17-downloads.html](https://www.oracle.com/java/technologies/downloads/#java17)
+2. 推荐使用IDEA智能IDE，参考安装路径：[https://www.jetbrains.com/idea/download/](https://www.jetbrains.com/idea/download/)
+3. Maven3.6.3版本及以上，参考安装路径：[https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
 
 ###### **安装步骤**
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+Clone the repo
 
 ```sh
-git clone https://github.com/shaojintian/Best_README_template.git
+git clone https://github.com/devinlovekoala/admin-system-demo-by-springboot.git
 ```
 
 ### 文件目录说明
-eg:
+#### (可以参考学习MVC模式的文件目录结构)
+
+MVC模式学习参考：https://www.runoob.com/design-pattern/mvc-pattern.html
 
 ```
-filetree 
-├── ARCHITECTURE.md
-├── LICENSE.txt
-├── README.md
-├── /account/
-├── /bbs/
-├── /docs/
-│  ├── /rules/
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-├── manage.py
-├── /oa/
-├── /static/
-├── /templates/
-├── useless.md
-└── /util/
+src
+└── main
+    ├── java
+    │   └── com
+    │       └── example
+    │           └── admin
+    │               └── controller
+    │                   └── IndexController.java
+    └── resources
+        ├── application.properties
+        └── templates
+            └── index.html
 
 ```
 
@@ -98,32 +92,21 @@ filetree
 
 ### 开发的架构
 
-请阅读[ARCHITECTURE.md](https://github.com/shaojintian/Best_README_template/blob/master/ARCHITECTURE.md) 查阅为该项目的架构。
+Java SpringBoot开源架构
+
+请阅读开源代码仓库
+[https://github.com/spring-projects/spring-boot](https://github.com/spring-projects/spring-boot)
 
 ### 部署
 
 暂无
 
-### 使用到的框架
+### 感谢以下所有开源资源和框架服务对本项目的支持
 
-- [xxxxxxx](https://getbootstrap.com)
-- [xxxxxxx](https://jquery.com)
-- [xxxxxxx](https://laravel.com)
-
-### 贡献者
-
-请阅读**CONTRIBUTING.md** 查阅为该项目做出贡献的开发者。
-
-#### 如何参与开源项目
-
-贡献使开源社区成为一个学习、激励和创造的绝佳场所。你所作的任何贡献都是**非常感谢**的。
-
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- [SpringBoot](https://spring.io/projects/spring-boot)
+- [MVN依赖管理仓库](https://mvnrepository.com/)
+- [前端BootStrap开源免费模板](https://mb.bootcss.com/)
+- [狂神说SpringBoot系列学习](https://www.cnblogs.com/hellokuangshen/tag/SpringBoot%E7%B3%BB%E5%88%97/)
 
 
 
@@ -133,37 +116,18 @@ filetree
 
 ### 作者
 
-xxx@xxxx
+BUPT Devin
 
 知乎:xxxx  &ensp; qq:xxxxxx
 
-*您也可以在贡献者名单中参看所有参与该项目的开发者。*
+*欢迎联系我提出建议意见，共同维护admin后台管理框架*
 
 ### 版权说明
 
 该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt)
 
-### 鸣谢
+### 特别鸣谢
 
+感谢 [JetBrains](https://www.jetbrains.com/) 提供的 Student Pack License，本项目主要使用IDEA进行开发和版本控制
 
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Img Shields](https://shields.io)
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
-- [Animate.css](https://daneden.github.io/animate.css)
-- [xxxxxxxxxxxxxx](https://connoratherton.com/loaders)
-
-<!-- links -->
-[your-project-path]:shaojintian/Best_README_template
-[contributors-shield]: https://img.shields.io/github/contributors/shaojintian/Best_README_template.svg?style=flat-square
-[contributors-url]: https://github.com/shaojintian/Best_README_template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/shaojintian/Best_README_template.svg?style=flat-square
-[forks-url]: https://github.com/shaojintian/Best_README_template/network/members
-[stars-shield]: https://img.shields.io/github/stars/shaojintian/Best_README_template.svg?style=flat-square
-[stars-url]: https://github.com/shaojintian/Best_README_template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg
-[license-shield]: https://img.shields.io/github/license/shaojintian/Best_README_template.svg?style=flat-square
-[license-url]: https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/shaojintian
+感谢上面提到的每个开源项目
